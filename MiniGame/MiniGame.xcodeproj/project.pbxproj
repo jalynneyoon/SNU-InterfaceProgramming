@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */; };
+		FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3326EEDFC400E9463B /* ContentView.swift */; };
+		FCBF6A3626EEDFC500E9463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBF6A3526EEDFC500E9463B /* Assets.xcassets */; };
+		FCBF6A3926EEDFC500E9463B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBF6A3826EEDFC500E9463B /* Preview Assets.xcassets */; };
+		FCBF6A4426EEDFC500E9463B /* MiniGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A4326EEDFC500E9463B /* MiniGameTests.swift */; };
+		FCBF6A4F26EEDFC500E9463B /* MiniGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A4E26EEDFC500E9463B /* MiniGameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCBF6A4026EEDFC500E9463B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBF6A2626EEDFC400E9463B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBF6A2D26EEDFC400E9463B;
+			remoteInfo = MiniGame;
+		};
+		FCBF6A4B26EEDFC500E9463B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCBF6A2626EEDFC400E9463B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCBF6A2D26EEDFC400E9463B;
+			remoteInfo = MiniGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FCBF6A2E26EEDFC400E9463B /* MiniGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameApp.swift; sourceTree = "<group>"; };
+		FCBF6A3326EEDFC400E9463B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCBF6A3526EEDFC500E9463B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCBF6A3826EEDFC500E9463B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FCBF6A3A26EEDFC500E9463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBF6A3F26EEDFC500E9463B /* MiniGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBF6A4326EEDFC500E9463B /* MiniGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameTests.swift; sourceTree = "<group>"; };
+		FCBF6A4526EEDFC500E9463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBF6A4A26EEDFC500E9463B /* MiniGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCBF6A4E26EEDFC500E9463B /* MiniGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameUITests.swift; sourceTree = "<group>"; };
+		FCBF6A5026EEDFC500E9463B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCBF6A2B26EEDFC400E9463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A3C26EEDFC500E9463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A4726EEDFC500E9463B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FCBF6A2526EEDFC400E9463B = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A3026EEDFC400E9463B /* MiniGame */,
+				FCBF6A4226EEDFC500E9463B /* MiniGameTests */,
+				FCBF6A4D26EEDFC500E9463B /* MiniGameUITests */,
+				FCBF6A2F26EEDFC400E9463B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCBF6A2F26EEDFC400E9463B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A2E26EEDFC400E9463B /* MiniGame.app */,
+				FCBF6A3F26EEDFC500E9463B /* MiniGameTests.xctest */,
+				FCBF6A4A26EEDFC500E9463B /* MiniGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCBF6A3026EEDFC400E9463B /* MiniGame */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */,
+				FCBF6A3326EEDFC400E9463B /* ContentView.swift */,
+				FCBF6A3526EEDFC500E9463B /* Assets.xcassets */,
+				FCBF6A3A26EEDFC500E9463B /* Info.plist */,
+				FCBF6A3726EEDFC500E9463B /* Preview Content */,
+			);
+			path = MiniGame;
+			sourceTree = "<group>";
+		};
+		FCBF6A3726EEDFC500E9463B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A3826EEDFC500E9463B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCBF6A4226EEDFC500E9463B /* MiniGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A4326EEDFC500E9463B /* MiniGameTests.swift */,
+				FCBF6A4526EEDFC500E9463B /* Info.plist */,
+			);
+			path = MiniGameTests;
+			sourceTree = "<group>";
+		};
+		FCBF6A4D26EEDFC500E9463B /* MiniGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A4E26EEDFC500E9463B /* MiniGameUITests.swift */,
+				FCBF6A5026EEDFC500E9463B /* Info.plist */,
+			);
+			path = MiniGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCBF6A2D26EEDFC400E9463B /* MiniGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBF6A5326EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGame" */;
+			buildPhases = (
+				FCBF6A2A26EEDFC400E9463B /* Sources */,
+				FCBF6A2B26EEDFC400E9463B /* Frameworks */,
+				FCBF6A2C26EEDFC400E9463B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MiniGame;
+			productName = MiniGame;
+			productReference = FCBF6A2E26EEDFC400E9463B /* MiniGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FCBF6A3E26EEDFC500E9463B /* MiniGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBF6A5626EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGameTests" */;
+			buildPhases = (
+				FCBF6A3B26EEDFC500E9463B /* Sources */,
+				FCBF6A3C26EEDFC500E9463B /* Frameworks */,
+				FCBF6A3D26EEDFC500E9463B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBF6A4126EEDFC500E9463B /* PBXTargetDependency */,
+			);
+			name = MiniGameTests;
+			productName = MiniGameTests;
+			productReference = FCBF6A3F26EEDFC500E9463B /* MiniGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FCBF6A4926EEDFC500E9463B /* MiniGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCBF6A5926EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGameUITests" */;
+			buildPhases = (
+				FCBF6A4626EEDFC500E9463B /* Sources */,
+				FCBF6A4726EEDFC500E9463B /* Frameworks */,
+				FCBF6A4826EEDFC500E9463B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCBF6A4C26EEDFC500E9463B /* PBXTargetDependency */,
+			);
+			name = MiniGameUITests;
+			productName = MiniGameUITests;
+			productReference = FCBF6A4A26EEDFC500E9463B /* MiniGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCBF6A2626EEDFC400E9463B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FCBF6A2D26EEDFC400E9463B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					FCBF6A3E26EEDFC500E9463B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FCBF6A2D26EEDFC400E9463B;
+					};
+					FCBF6A4926EEDFC500E9463B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = FCBF6A2D26EEDFC400E9463B;
+					};
+				};
+			};
+			buildConfigurationList = FCBF6A2926EEDFC400E9463B /* Build configuration list for PBXProject "MiniGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCBF6A2526EEDFC400E9463B;
+			productRefGroup = FCBF6A2F26EEDFC400E9463B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCBF6A2D26EEDFC400E9463B /* MiniGame */,
+				FCBF6A3E26EEDFC500E9463B /* MiniGameTests */,
+				FCBF6A4926EEDFC500E9463B /* MiniGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FCBF6A2C26EEDFC400E9463B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBF6A3926EEDFC500E9463B /* Preview Assets.xcassets in Resources */,
+				FCBF6A3626EEDFC500E9463B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A3D26EEDFC500E9463B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A4826EEDFC500E9463B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCBF6A2A26EEDFC400E9463B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */,
+				FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A3B26EEDFC500E9463B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBF6A4426EEDFC500E9463B /* MiniGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCBF6A4626EEDFC500E9463B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCBF6A4F26EEDFC500E9463B /* MiniGameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCBF6A4126EEDFC500E9463B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBF6A2D26EEDFC400E9463B /* MiniGame */;
+			targetProxy = FCBF6A4026EEDFC500E9463B /* PBXContainerItemProxy */;
+		};
+		FCBF6A4C26EEDFC500E9463B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCBF6A2D26EEDFC400E9463B /* MiniGame */;
+			targetProxy = FCBF6A4B26EEDFC500E9463B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCBF6A5126EEDFC500E9463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FCBF6A5226EEDFC500E9463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCBF6A5426EEDFC500E9463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniGame/Preview Content\"";
+				DEVELOPMENT_TEAM = N48W337W2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCBF6A5526EEDFC500E9463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiniGame/Preview Content\"";
+				DEVELOPMENT_TEAM = N48W337W2F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MiniGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FCBF6A5726EEDFC500E9463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N48W337W2F;
+				INFOPLIST_FILE = MiniGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGame.app/MiniGame";
+			};
+			name = Debug;
+		};
+		FCBF6A5826EEDFC500E9463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N48W337W2F;
+				INFOPLIST_FILE = MiniGameTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiniGame.app/MiniGame";
+			};
+			name = Release;
+		};
+		FCBF6A5A26EEDFC500E9463B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N48W337W2F;
+				INFOPLIST_FILE = MiniGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniGame;
+			};
+			name = Debug;
+		};
+		FCBF6A5B26EEDFC500E9463B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N48W337W2F;
+				INFOPLIST_FILE = MiniGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.johyeon.MiniGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MiniGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCBF6A2926EEDFC400E9463B /* Build configuration list for PBXProject "MiniGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBF6A5126EEDFC500E9463B /* Debug */,
+				FCBF6A5226EEDFC500E9463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBF6A5326EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBF6A5426EEDFC500E9463B /* Debug */,
+				FCBF6A5526EEDFC500E9463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBF6A5626EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBF6A5726EEDFC500E9463B /* Debug */,
+				FCBF6A5826EEDFC500E9463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCBF6A5926EEDFC500E9463B /* Build configuration list for PBXNativeTarget "MiniGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCBF6A5A26EEDFC500E9463B /* Debug */,
+				FCBF6A5B26EEDFC500E9463B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCBF6A2626EEDFC400E9463B /* Project object */;
+}
