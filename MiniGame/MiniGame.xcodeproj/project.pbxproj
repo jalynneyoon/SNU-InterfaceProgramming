@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC2415AD27015A7D005F3348 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2415AC27015A7D005F3348 /* Game.swift */; };
 		FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */; };
 		FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3326EEDFC400E9463B /* ContentView.swift */; };
 		FCBF6A3626EEDFC500E9463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBF6A3526EEDFC500E9463B /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC2415AC27015A7D005F3348 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		FCBF6A2E26EEDFC400E9463B /* MiniGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameApp.swift; sourceTree = "<group>"; };
 		FCBF6A3326EEDFC400E9463B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC2415A927015A0A005F3348 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A3326EEDFC400E9463B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC2415AA27015A1D005F3348 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC2415AC27015A7D005F3348 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC2415AB27015A2F005F3348 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FCBF6A3526EEDFC500E9463B /* Assets.xcassets */,
+				FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		FCBF6A2526EEDFC400E9463B = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +122,9 @@
 		FCBF6A3026EEDFC400E9463B /* MiniGame */ = {
 			isa = PBXGroup;
 			children = (
-				FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */,
-				FCBF6A3326EEDFC400E9463B /* ContentView.swift */,
-				FCBF6A3526EEDFC500E9463B /* Assets.xcassets */,
+				FC2415AB27015A2F005F3348 /* App */,
+				FC2415AA27015A1D005F3348 /* Models */,
+				FC2415A927015A0A005F3348 /* Views */,
 				FCBF6A3A26EEDFC500E9463B /* Info.plist */,
 				FCBF6A3726EEDFC500E9463B /* Preview Content */,
 			);
@@ -260,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */,
+				FC2415AD27015A7D005F3348 /* Game.swift in Sources */,
 				FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
