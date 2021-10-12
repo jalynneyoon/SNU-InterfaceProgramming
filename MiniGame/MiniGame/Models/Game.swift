@@ -17,4 +17,19 @@ struct Game {
     func calculatePoints(slideValue : Int) -> Int {
         100 - abs(target - slideValue)
     }
+    
+    func points(slideValue: Int) -> Int {
+        let difference = abs(target - slideValue)
+        let awardedPoints = 100 - difference
+        
+        return awardedPoints
+    }
+    
+    mutating func startNewRound(points: Int) {
+        score += points
+        round += 1
+        target = Int.random(in: 2..<100)
+
+    }
+    
 }
