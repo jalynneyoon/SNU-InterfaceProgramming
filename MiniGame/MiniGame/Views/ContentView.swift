@@ -16,14 +16,24 @@ struct ContentView: View {
     var body: some View {
         
         ZStack {
-            BackgroundView(game: .constant(Game()))
+            BackgroundView(game: $game)
             VStack {
                 InstructionsView(game: $game)
-                SliderView(slideValue: $slideValue)
-                .padding()
-                HitMeButton(alertIsVisible: $alertIsVisible, slideValue: $slideValue, game: $game)
-
+                    .padding(.bottom, alertIsVisible ? 0.0 : 100.0)
+                if alertIsVisible {
+                    PointsView(alertIsVisible: $alertIsVisible, sliderValue: $slideValue, game: $game)
+                        .transition(.scale)
+                } else {
+                    HitMeButton(alertIsVisible: $alertIsVisible, slideValue: $slideValue, game: $game)
+                        .transition(.scale)
+                }
+                
             }  // vstack
+            if !alertIsVisible {
+                SliderView(slideValue: $slideValue)
+                    .transition(.scale)
+            }
+            
         }
         
     }
@@ -62,7 +72,9 @@ struct HitMeButton: View {
 
     var body : some View {
         Button(action: {
-            alertIsVisible = true
+            withAnimation {
+                alertIsVisible = true
+            }
         }) {
             Text("Hit me")
                 .bold()
@@ -77,29 +89,20 @@ struct HitMeButton: View {
             }
             
         )
-        .cornerRadius(15.0)
+        .cornerRadius(Constants.General.roundedRectCornerRadius)
         .overlay(
-            RoundedRectangle(cornerRadius: 15.0)
+            RoundedRectangle(cornerRadius: Constants.General.roundedRectCornerRadius)
                 .strokeBorder(Color.white, lineWidth: 2.0)
         )
-
-        .alert(isPresented: $alertIsVisible, content: {
-            let roundedValue = Int(slideValue.rounded())
-            let points = game.calculatePoints(slideValue: roundedValue)
-            return Alert(title: Text("Hello,there"),
-                         message: Text("The slide value is \(roundedValue)\n" + "Your score is \(points) points"),
-                         dismissButton: .default(Text("Awesome!")) {
-                            game.startNewRound(points: points)
-                         }
-            )
-        })
+        
+    }
     }
     
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
+
             ContentView().previewLayout(.fixed(width: 568.0, height: 320.0))
             ContentView().previewLayout(.fixed(width: 568.0, height: 320.0))
                 .preferredColorScheme(.dark)
@@ -107,3 +110,4 @@ struct ContentView_Previews: PreviewProvider {
         }
     }
 }
+

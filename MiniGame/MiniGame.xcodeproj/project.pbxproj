@@ -12,6 +12,9 @@
 		FC825EE52713DC9700EE4B57 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC825EE42713DC9700EE4B57 /* Shapes.swift */; };
 		FC825EE72713E2B700EE4B57 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC825EE62713E2B700EE4B57 /* RoundedViews.swift */; };
 		FC825EE92713E5B400EE4B57 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC825EE82713E5B400EE4B57 /* BackgroundView.swift */; };
+		FC9EDE6A271D0EE6003E7791 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9EDE69271D0EE6003E7791 /* PointsView.swift */; };
+		FC9EDE6C271D191E003E7791 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9EDE6B271D191E003E7791 /* Constants.swift */; };
+		FC9EDE6E271D1E81003E7791 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9EDE6D271D1E81003E7791 /* LeaderboardView.swift */; };
 		FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */; };
 		FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBF6A3326EEDFC400E9463B /* ContentView.swift */; };
 		FCBF6A3626EEDFC500E9463B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBF6A3526EEDFC500E9463B /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 		FC825EE42713DC9700EE4B57 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		FC825EE62713E2B700EE4B57 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		FC825EE82713E5B400EE4B57 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		FC9EDE69271D0EE6003E7791 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		FC9EDE6B271D191E003E7791 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC9EDE6D271D1E81003E7791 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 		FCBF6A2E26EEDFC400E9463B /* MiniGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBF6A3126EEDFC400E9463B /* MiniGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniGameApp.swift; sourceTree = "<group>"; };
 		FCBF6A3326EEDFC400E9463B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 				FC825EE42713DC9700EE4B57 /* Shapes.swift */,
 				FC825EE62713E2B700EE4B57 /* RoundedViews.swift */,
 				FC825EE82713E5B400EE4B57 /* BackgroundView.swift */,
+				FC9EDE69271D0EE6003E7791 /* PointsView.swift */,
+				FC9EDE6D271D1E81003E7791 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2415AC27015A7D005F3348 /* Game.swift */,
+				FC9EDE6B271D191E003E7791 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,13 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9EDE6E271D1E81003E7791 /* LeaderboardView.swift in Sources */,
 				FC825EE72713E2B700EE4B57 /* RoundedViews.swift in Sources */,
 				FCBF6A3426EEDFC400E9463B /* ContentView.swift in Sources */,
 				FC825EE32713D1E800EE4B57 /* TextViews.swift in Sources */,
+				FC9EDE6A271D0EE6003E7791 /* PointsView.swift in Sources */,
 				FC825EE92713E5B400EE4B57 /* BackgroundView.swift in Sources */,
 				FC825EE52713DC9700EE4B57 /* Shapes.swift in Sources */,
 				FC2415AD27015A7D005F3348 /* Game.swift in Sources */,
 				FCBF6A3226EEDFC400E9463B /* MiniGameApp.swift in Sources */,
+				FC9EDE6C271D191E003E7791 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

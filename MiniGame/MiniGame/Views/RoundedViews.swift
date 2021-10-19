@@ -45,20 +45,39 @@ struct RoundedRectView : View {
                 .foregroundColor(Color("TextColor"))
                 .font(.title2)
                 .bold()
-            RoundedRectangle(cornerRadius: 15.0)
+            RoundedRectangle(cornerRadius: Constants.General.roundedRectCornerRadius)
                 .strokeBorder(Color("ButtonStrokeColor"), lineWidth: 2.0)
                 .frame(width: 70, height : 70)
                 .background(
-                    Color("BackgroundFilledColor")
+                    Color(.clear)
                 )
         }
     }
 }
 
+
+struct RoundedTextView : View {
+    var text : String
+    var body: some View {
+        Text(text)
+            .font(.title)
+            .foregroundColor(Color("TextColor"))
+            .frame(width: Constants.General.roundedViewLength, height : Constants.General.roundedViewLength)
+            .overlay(
+                Circle()
+                    .strokeBorder(Color("LeaderboardRowColor"), lineWidth: Constants.General.strokeWidth)
+            )
+    }
+}
+
+
 struct RoundedViews_Previews: PreviewProvider {
     static var previews: some View {
-//        RoundedImageViewStroked(systemName: "arrow.counterclockwise")
-        RoundedRectView(number: 100)
-            .preferredColorScheme(.dark)
+
+        VStack {
+            RoundedRectView(number: 100)
+            RoundedTextView(text: String(1))
+
+        }
     }
 }

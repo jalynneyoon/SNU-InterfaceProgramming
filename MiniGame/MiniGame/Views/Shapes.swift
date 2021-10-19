@@ -13,7 +13,7 @@ struct Shapes: View {
             Circle()
                 .strokeBorder(Color.blue, lineWidth: 20.0)
                 .frame(width: 200, height: 100.0)
-            RoundedRectangle(cornerRadius:  20.0)
+            RoundedRectangle(cornerRadius:  Constants.General.roundedRectCornerRadius)
                 .fill(Color.blue)
                 .frame(width: 200, height: 100)
             
