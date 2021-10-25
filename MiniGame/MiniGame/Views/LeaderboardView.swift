@@ -8,14 +8,26 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+    @Binding var leaderboardIsShowing: Bool
+    @Binding var game : Game
     var body: some View {
         ZStack {
-            Color("backgroundColor")
+            Color("BackgroundColor")
                 .edgesIgnoringSafeArea(.all)
             VStack{
-                HeaderView()
+                HeaderView(leaderboardIsShowing: $leaderboardIsShowing)
                 LabelView()
-                RowView(index: 1, score: 10, date: Date())
+                
+                ScrollView {
+                    VStack {
+                        ForEach(game.leaderboardEntries.indices) {
+                            let leaderboardEntry = game.leaderboardEntries[$0]
+                            RowView(index: $0, score: leaderboardEntry.score, date: leaderboardEntry.date)
+                            
+                        }
+                    }
+                    
+                }
             }
         }
     }
@@ -48,14 +60,33 @@ struct RowView: View {
 
 
 struct HeaderView: View {
+    @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Binding var leaderboardIsShowing: Bool
+    
     var body: some View {
         ZStack {
-            BigBoldText(text: "Leaderboard")
+            HStack {
+                if verticalSizeClass == .regular && horizontalSizeClass == .compact {
+                    BigBoldText(text: "Leaderboard")
+                    Spacer()
+                } else{
+                    BigBoldText(text: "Leaderboard")
+                }
+                
+            }
+            .padding([.top, .leading])
+
             HStack {
                 Spacer()
-                RoundedImageViewFilled(systemName: "xmark")
-                    .padding(.trailing)
+                Button(action: {
+                    leaderboardIsShowing = false                    
+                }){
+                    RoundedImageViewFilled(systemName: "xmark")
+                        .padding([.top, .trailing])
+                }
             }
+            
         }
     }
 }
@@ -81,9 +112,16 @@ struct LabelView: View {
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            LeaderboardView()
+            LeaderboardView(leaderboardIsShowing: Binding.constant(true),
+                            game: Binding.constant(Game()))
+            LeaderboardView(leaderboardIsShowing: Binding.constant(true),
+                            game: Binding.constant(Game()))
                 .previewLayout(.fixed(width: 568, height: 320))
-            LeaderboardView()
+            LeaderboardView(leaderboardIsShowing: Binding.constant(true),
+                            game: Binding.constant(Game()))
+                .preferredColorScheme(.dark)
+            LeaderboardView(leaderboardIsShowing: Binding.constant(true),
+                            game: Binding.constant(Game()))
                 .preferredColorScheme(.dark)
                 .previewLayout(.fixed(width: 568, height: 320))
         }
