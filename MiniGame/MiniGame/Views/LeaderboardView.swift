@@ -22,7 +22,7 @@ struct LeaderboardView: View {
                     VStack {
                         ForEach(game.leaderboardEntries.indices) {
                             let leaderboardEntry = game.leaderboardEntries[$0]
-                            RowView(index: $0, score: leaderboardEntry.score, date: leaderboardEntry.date)
+                            RowView(index: $0 + 1, score: leaderboardEntry.score, date: leaderboardEntry.date)
                             
                         }
                     }
