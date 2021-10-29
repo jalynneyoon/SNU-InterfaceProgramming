@@ -19,15 +19,15 @@ struct Game {
     var round = 1
     var leaderboardEntries: [LeaderboardEntry] = []
     
-    init(loadTestData: Bool = false) {
-        if loadTestData {
-            leaderboardEntries.append(LeaderboardEntry(score: 100, date: Date()))
-            leaderboardEntries.append(LeaderboardEntry(score: 80, date: Date()))
-            leaderboardEntries.append(LeaderboardEntry(score: 200, date: Date()))
-            leaderboardEntries.append(LeaderboardEntry(score: 143, date: Date()))
-            leaderboardEntries.append(LeaderboardEntry(score: 50, date: Date()))
-        }
-    }
+//    init(loadTestData: Bool = false) {
+//        if loadTestData {
+//            leaderboardEntries.append(LeaderboardEntry(score: 100, date: Date()))
+//            leaderboardEntries.append(LeaderboardEntry(score: 80, date: Date()))
+//            leaderboardEntries.append(LeaderboardEntry(score: 200, date: Date()))
+//            leaderboardEntries.append(LeaderboardEntry(score: 143, date: Date()))
+//            leaderboardEntries.append(LeaderboardEntry(score: 50, date: Date()))
+//        }
+//    }
     
     func calculatePoints(slideValue : Int) -> Int {
         100 - abs(target - slideValue)
@@ -53,7 +53,10 @@ struct Game {
         score += points
         round += 1
         target = Int.random(in: 2..<100)
-        addToLeaderboard(point: points)
+        
+        if round > 3 {
+            addToLeaderboard(point: points)
+        }
 
     }
     
@@ -65,7 +68,11 @@ struct Game {
     }
     
     mutating func addToLeaderboard(point : Int) {
-        leaderboardEntries.append(LeaderboardEntry(score: point, date: Date()))
+        // 평균점수로 리더보드 업데이트.
+        leaderboardEntries.append(LeaderboardEntry(score: Int(score/(round-1)), date: Date()))
+    }
+    
+    mutating func sortLeaderboard() {
         leaderboardEntries.sort {
             $0.score > $1.score
         }

@@ -35,6 +35,7 @@ struct TopView : View {
             }
             Spacer()
             Button(action : {
+                game.sortLeaderboard()
                 leaderboardIsShowing = true
             }) {
                 RoundedImageViewFilled(systemName: "list.dash")
