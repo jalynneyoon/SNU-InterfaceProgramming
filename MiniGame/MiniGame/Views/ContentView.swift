@@ -76,24 +76,8 @@ struct HitMeButton: View {
                 alertIsVisible = true
             }
         }) {
-            Text("Hit me")
-                .bold()
-
+            HitMeButtonView(text: "Hit me")
         }
-        .foregroundColor(.white)
-        .padding(20.0)
-        .background(
-            ZStack {
-                Color("ButtonColor")
-                LinearGradient(gradient: Gradient(colors: [.white.opacity(0.3), .clear]), startPoint: .top, endPoint: .bottom)
-            }
-            
-        )
-        .cornerRadius(Constants.General.roundedRectCornerRadius)
-        .overlay(
-            RoundedRectangle(cornerRadius: Constants.General.roundedRectCornerRadius)
-                .strokeBorder(Color.white, lineWidth: 2.0)
-        )
         
     }
     }

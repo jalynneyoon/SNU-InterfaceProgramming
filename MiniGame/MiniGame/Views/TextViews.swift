@@ -102,6 +102,38 @@ struct BigBoldText: View {
     }
 }
 
+struct InformationHeaderText: View {
+    var text : String
+    var body: some View {
+        Text(text)
+            .foregroundColor(Color("TextColor"))
+            .font(.title)
+            .fontWeight(.bold)
+    }
+}
+
+struct HitMeButtonView: View {
+    var text : String
+    var body: some View {
+        Text(text)
+            .bold()
+            .foregroundColor(.white)
+            .padding(20.0)
+            .background(
+                ZStack {
+                    Color("ButtonColor")
+                    LinearGradient(gradient: Gradient(colors: [.white.opacity(0.3), .clear]), startPoint: .top, endPoint: .bottom)
+                }
+                
+            )
+            .cornerRadius(Constants.General.roundedRectCornerRadius)
+            .overlay(
+                RoundedRectangle(cornerRadius: Constants.General.roundedRectCornerRadius)
+                    .strokeBorder(Color.white, lineWidth: 2.0)
+            )
+    }
+}
+
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
@@ -113,6 +145,7 @@ struct TextViews_Previews: PreviewProvider {
             BodyText(text: "You scored 200 Points\n🎉🎉🎉")
                 
             ButtonText(text: "Start New Round")
+            InformationHeaderText(text: "InformationHeader")
         }
     }
 }

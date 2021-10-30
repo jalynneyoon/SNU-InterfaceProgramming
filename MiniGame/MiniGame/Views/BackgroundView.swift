@@ -25,25 +25,41 @@ struct BackgroundView: View {
 struct TopView : View {
     @Binding var game : Game
     @State var leaderboardIsShowing = false
+    @State var informationIsShowing = false
     
     var body : some View {
-        HStack {
+        HStack(alignment : .top) {
             Button(action: {
                 game.restart()
             }) {
                 RoundedImageViewStroked(systemName: "arrow.counterclockwise")
             }
             Spacer()
-            Button(action : {
-                game.sortLeaderboard()
-                leaderboardIsShowing = true
-            }) {
-                RoundedImageViewFilled(systemName: "list.dash")
-            }
-            .sheet(isPresented: $leaderboardIsShowing) {} content: {
-                LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing, game: $game)
+            
+            VStack(spacing : 10) {
+                // 리더보드
+                Button(action : {
+                    game.sortLeaderboard()
+                    leaderboardIsShowing = true
+                }) {
+                    RoundedImageViewFilled(systemName: "list.dash")
+                }
+                .sheet(isPresented: $leaderboardIsShowing) {} content: {
+                    LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing, game: $game)
+                }
+                // info
+                Button(action: {
+                    informationIsShowing = true
+                }) {
+                    RoundedImageViewStroked(systemName: "info")
+                }
+                .sheet(isPresented: $informationIsShowing) {} content: {
+                    InformationView(informationIsShowing: $informationIsShowing)
+                    
+                }
             }
         }
+        
         .padding()
     }
 }
@@ -104,9 +120,15 @@ struct NumberView : View {
 
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
+        BackgroundView(game: .constant(Game())).previewLayout(.fixed(width: 568.0, height: 320.0))
         BackgroundView(game: .constant(Game()))
+        
+        BackgroundView(game: .constant(Game())).previewLayout(.fixed(width: 568.0, height: 320.0))
+            .preferredColorScheme(.dark)
+        
         BackgroundView(game: .constant(Game()))
             .preferredColorScheme(.dark)
+        
 
     }
 }
