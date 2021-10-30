@@ -61,6 +61,7 @@ struct SliderView : View {
             Text("100")
                 .bold()
         }
+        .padding([.leading, .trailing])
         
     }
 }
