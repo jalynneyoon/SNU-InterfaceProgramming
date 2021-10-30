@@ -45,7 +45,7 @@ struct InstructionsView : View {
     
     var body: some View {
         VStack {
-            InstructionText(text: "🍎🍎🍎 \n Put the bulleyes as close as you can!")
+            InstructionText(text: "🍎🍎🍎 \n Put the slide as close as you can!")
                 .padding([.leading, .trailing], 30.0)
             BigNumberText(text: String(game.target))
         }
@@ -77,7 +77,7 @@ struct HitMeButton: View {
                 alertIsVisible = true
             }
         }) {
-            HitMeButtonView(text: "Hit me")
+            HitMeButtonTextView(text: "Hit me")
         }
         
     }

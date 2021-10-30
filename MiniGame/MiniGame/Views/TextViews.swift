@@ -112,7 +112,7 @@ struct InformationHeaderText: View {
     }
 }
 
-struct HitMeButtonView: View {
+struct HitMeButtonTextView: View {
     var text : String
     var body: some View {
         Text(text)

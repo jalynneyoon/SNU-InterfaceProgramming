@@ -32,7 +32,7 @@ struct InformationView: View {
             
             Spacer()
             InstructionText(text: "STEP2 : After you move the slide, \n Touch Hit me Button and check your score!")
-            HitMeButtonView(text: "Hit me")
+            HitMeButtonTextView(text: "Hit me")
             Spacer()
             Spacer()
             Spacer()
