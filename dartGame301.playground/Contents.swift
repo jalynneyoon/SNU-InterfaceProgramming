@@ -5,7 +5,7 @@ protocol Game {
     func playGame()
 }
 
-class DartGame301 {
+struct DartGame301 {
     enum MultiplyingNum : Int {
         case single = 1
         case double = 2
@@ -35,26 +35,9 @@ extension DartGame301 : Game {
         
         for i in 0..<10 {
             print("\(i+1)라운드 시작")
-            var roundScore = 0
-            
-            for j in 0..<3 {
-                let dartScore = makeRandomDartScore()
-                let multiplyingNum = getmultiplyingNum(dartScore)
-                guard let multiplyingStr = MultiplyingNum(rawValue: multiplyingNum) else { return }
-                
-                let totalDart = multiplyingNum * dartScore
-                roundScore += totalDart
-                
-                print("\(j+1)번 다트의 점수는 \(dartScore)이고 \(multiplyingStr)입니다. 현재까지의 Total Score는 \(totalScore + roundScore)점입니다.")
-                
-                if totalScore + roundScore > 301 {
-                    print("----Burst입니다. \(i+1)라운드를 더 이상 진행하지 않습니다.")
-                    roundScore = 0
-                    break
-                }
-            }
-            
+            let roundScore = getRoundScore(of: i+1, totalScore)
             totalScore += roundScore
+
             if totalScore == 301 {
                 print("\n게임종료. \(i+1)라운드에서 301점을 달성하였습니다!")
                 return
@@ -63,6 +46,27 @@ extension DartGame301 : Game {
         }
         print("게임종료. 301점까지 \(301-totalScore)점이 남았습니다.")
     }
+    
+    func getRoundScore(of round : Int, _ totalScore : Int) -> Int {
+        var roundScore = 0
+        
+        for i in 0..<3 {
+            let dartScore = makeRandomDartScore()
+            let multiplyingNum = getmultiplyingNum(dartScore)
+            let totalDart = multiplyingNum * dartScore
+            roundScore += totalDart
+            
+            let multiplyingStr = MultiplyingNum(rawValue: multiplyingNum)!
+            print("\(i+1)번 다트의 점수는 \(dartScore)이고 \(multiplyingStr)입니다. 현재까지의 Total Score는 \(totalScore + roundScore)점입니다.")
+            
+            if totalScore + roundScore > 301 {
+                print("----Burst입니다. \(round)라운드를 더 이상 진행하지 않습니다.")
+                return 0
+            }
+        }
+        return roundScore
+    }
+    
 }
 
 
