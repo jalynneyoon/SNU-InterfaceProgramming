@@ -14,6 +14,11 @@
 		FC35F95A275CC314002B52C1 /* SecondPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35F959275CC314002B52C1 /* SecondPracticeTests.swift */; };
 		FC35F964275CC314002B52C1 /* SecondPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35F963275CC314002B52C1 /* SecondPracticeUITests.swift */; };
 		FC35F966275CC314002B52C1 /* SecondPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC35F965275CC314002B52C1 /* SecondPracticeUITestsLaunchTests.swift */; };
+		FC475EEB275D9D180033A56A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC475EEA275D9D180033A56A /* Book.swift */; };
+		FC475EF1275D9DCA0033A56A /* BookViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC475EF0275D9DCA0033A56A /* BookViews.swift */; };
+		FC475EF3275DA64C0033A56A /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC475EF2275DA64C0033A56A /* Library.swift */; };
+		FC475EF7275DABB90033A56A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC475EF6275DABB90033A56A /* DetailView.swift */; };
+		FC475EF9275DB66D0033A56A /* PHPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC475EF8275DB66D0033A56A /* PHPickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		FC35F95F275CC314002B52C1 /* SecondPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC35F963275CC314002B52C1 /* SecondPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPracticeUITests.swift; sourceTree = "<group>"; };
 		FC35F965275CC314002B52C1 /* SecondPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC475EEA275D9D180033A56A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FC475EF0275D9DCA0033A56A /* BookViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViews.swift; sourceTree = "<group>"; };
+		FC475EF2275DA64C0033A56A /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		FC475EF6275DABB90033A56A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FC475EF8275DB66D0033A56A /* PHPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHPickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,9 @@
 		FC35F947275CC314002B52C1 /* SecondPractice */ = {
 			isa = PBXGroup;
 			children = (
+				FC475EED275D9D330033A56A /* Models */,
+				FC475EEC275D9D250033A56A /* Views */,
 				FC35F948275CC314002B52C1 /* SecondPracticeApp.swift */,
-				FC35F94A275CC314002B52C1 /* ContentView.swift */,
 				FC35F94C275CC314002B52C1 /* Assets.xcassets */,
 				FC35F94E275CC314002B52C1 /* Preview Content */,
 			);
@@ -125,6 +136,26 @@
 				FC35F965275CC314002B52C1 /* SecondPracticeUITestsLaunchTests.swift */,
 			);
 			path = SecondPracticeUITests;
+			sourceTree = "<group>";
+		};
+		FC475EEC275D9D250033A56A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC35F94A275CC314002B52C1 /* ContentView.swift */,
+				FC475EF0275D9DCA0033A56A /* BookViews.swift */,
+				FC475EF6275DABB90033A56A /* DetailView.swift */,
+				FC475EF8275DB66D0033A56A /* PHPickerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC475EED275D9D330033A56A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC475EEA275D9D180033A56A /* Book.swift */,
+				FC475EF2275DA64C0033A56A /* Library.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC35F94B275CC314002B52C1 /* ContentView.swift in Sources */,
+				FC475EF7275DABB90033A56A /* DetailView.swift in Sources */,
 				FC35F949275CC314002B52C1 /* SecondPracticeApp.swift in Sources */,
+				FC475EF3275DA64C0033A56A /* Library.swift in Sources */,
+				FC475EEB275D9D180033A56A /* Book.swift in Sources */,
+				FC475EF9275DB66D0033A56A /* PHPickerViewController.swift in Sources */,
+				FC475EF1275D9DCA0033A56A /* BookViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +463,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
